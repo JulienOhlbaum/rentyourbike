@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.Default.css" />
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.3.0/dist/leaflet.markercluster.js"></script>
+    <script src="js/main.js" type="module"></script>
+    <link rel="icon" type="image/png" href="img/fav/bike.png">
+    <title>Rent your bike</title>
+  </head>
+
+  <body>
+    <div class="block-page">
+      <header>
+        <div class="banner">
+          <div class="block-title"> 
+            <h1>Rent Your Bike</h1>
+            <div class="first-underline"></div>
+            <div class="second-underline"></div>
+          </div>
+          <img src="../img/banner/banner.jpg" alt="A man riding on a bike">
+        </div> 
+      </header>
+
+      <section class="introduction-concept">
+        <div class="main-concept">
+          <h2 class="concept">Des vélos électriques pour raccourcir les distances</h2>
+          <p class="offer">Des déplacements simplifiés</p>
+        </div>
+        <div class="objectives">
+          <p>L’objectif du service Rent Your Bike est de faciliter le développement de nouvelles mobilités sur le territoire francilien, en complément de l’offre de transport existante.</p>
+          <p>Grâce à 35 % de vélos électriques, les déplacements sont rendus beaucoup plus simples : les usagers Rent Your Bike voient les distances se raccourcir et se jouent des reliefs sans effort. Dotés d’une autonomie de 50 km et pouvant atteindre une vitesse de 25 km/heure, ces vélos électriques constituent une véritable alternative à l’usage d’un véhicule individuel polluant.</p>
+        </div>
+      </section>
+
+      <section class="technology">
+        <div class="block-img-text-technology">
+          <div class="img-text">
+            <img src="../img/card/card1.jpg" alt="Electric bike motor">
+          </div>
+          <div class="img-text">
+            <img src="../img/card/card2.jpg" alt="Connected bike">
+          </div>
+          <div class="img-text">
+            <img src="../img/card/card3.jpg" alt="High-tech bike">
+          </div>
+        </div>
+      </section>
+
+      <section class="instructions">
+        <div class="instructions-title-paragraph">
+          <h2 class="instruction-title">Les stations, au coeur du dispositif de vélos en libre-service</h2>
+          <p class="instruction-paragraph">340+ STATIONS. 4,000 VÉLOS.</p>
+        </div>
+        <div class="main-slider slider-container">
+          <div class="bloc-image-figcaption">      
+              <img class="slider-img" src="../img/slider/intro.jpg" alt="A man riding on a bike">
+              <div class="figcaption">
+                <h3 class="main-instruction">Votre vélo réservé en quelques clicks !</h3>
+                <p class="additional-instructions"></p>
+              </div>
+          </div>
+          <div class="slider-controls">
+            <div class="slider-direction">
+              <a class="left-arrow"><i class="fas fa-chevron-left"></i></a>
+              <a class="right-arrow"><i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="slider-player-controls">
+              <a class="play-button"><i class="fas fa-play"></i></a>
+              <a class="pause-button hide"><i class="fas fa-pause-circle"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="map">
+        <div class="station-informations-panel">
+          <div class="close-panel">
+            <i class="fas fa-times"></i>
+          </div>
+          <div class="stations-informations">
+            <p class="address-station"></p>
+            <p class="name-station"></p>
+            <div class="bikes-and-places-available">
+              <div class="icone-information-panel">
+                <i class="fas fa-bicycle"></i>
+              </div>
+              <p class="available-bikes"></p>
+              <div class="icone-information-panel">
+                <i class="fas fa-parking"></i>
+              </div>
+              <p class="available-locations"></p>
+            </div>
+            <input type="button" value="Réserver" class="reservation button"/>
+          </div>
+        </div>
+
+        <div class="bike-reservation-panel" id="section1">
+          <div class="close-form">
+            <i class="fas fa-times"></i>
+          </div>
+          <canvas class="canvas" width='200' height='150' git></canvas>
+          <button class="bt-clear">Effacer</button>
+
+          <form class="submitForm">
+            <label for="lastname" class="last-name">Nom :</label>
+            <input name="lastname" type="text" class="lastname" required class="label" value=""/>
+            <br />
+            <label for="firstname" class="first-name">Prénom :</label>
+            <input name="firstname" type="text" class="firstname" required class="label" value=""/>
+            <p>
+              Veuillez apposer votre signature et<br>
+              indiquer votre nom et votre prénom afin de finaliser votre réservation
+            </p>     
+            <a href="#cancel-reservation" class="button store">Je réserve mon vélo</a>
+          </form>
+          <p class="warning-message"></p>
+        </div>
+      </section>
+
+      <section class="reservation-confirmation-panel display store">
+        <h2>Votre réservation :</h2>
+        <div class="reservation-information">
+          <p class="réservation-date"></p>
+          <p class="user-information"></p>
+          <p class="station-address"></p>
+          <a href="#cancel-reservation" class="cancel-reservation button">Annuler</a>
+        </div>
+      </section>
+
+      <footer>
+        <p>Julien Ohlbaum - OpenClassRooms, Projet n°3</p>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.5.0.js"
+        integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+  </body>
+</html>

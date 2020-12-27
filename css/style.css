@@ -1,0 +1,679 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui;
+}
+
+/*-- BANNER --*/
+
+.banner img {
+  width: 100%;
+  height: 100vh;
+  display: block;
+}
+
+.banner h1 {
+  color: white;
+  position: absolute;
+  top: 81%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+  font-size: 7vh;
+  padding: 20px;
+  font-family: system-ui;
+  cursor: default;
+  text-align: center;
+}
+
+.first-underline {
+  position: absolute;
+  top: 81.5%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+  border-top: 2px solid white;
+  width: 35vh;
+}
+
+.second-underline {
+  position: absolute;
+  top: 91%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+  border-top: 2px solid white;
+  width: 35vh;
+}
+
+.button-banner {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*-- INTRODUCTION CONCEPT --*/
+
+.introduction-concept {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0px 40px 0px;
+}
+
+.main-concept {
+  width: 31%;
+  margin-right: 30px;
+}
+
+.concept {
+  text-transform: uppercase;
+  font-size: 3.5vh;
+  color: #2D3E4E;
+  line-height: 5.5vh;
+  font-weight: 800;
+}
+
+.offer {
+  font-size: 3vh;
+  font-weight: 200;
+  color: #9E9E9E;
+  text-transform: uppercase;
+}
+
+.objectives {
+  width: 30%;
+  line-height: 3.7vh;
+  color: #2D3E4E;
+}
+
+.objectives p {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+/*-- TECHNOLOGY --*/
+
+.technology { 
+  text-align: center;
+  margin: 40px 0px 60px 0px;
+  background-color: #f2f2f2;
+}
+
+.block-img-text-technology {
+  display: flex;
+  justify-content: center;
+}
+
+.img-text {
+  width: 20%;
+  padding: 60px;
+}
+
+.img-text p {
+  color: #2D3E4E;
+  font-weight: 200;
+}
+
+.img-text img {
+  overflow: hidden;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 91px;
+  width: 11.9vw;
+  height: 11.6vw;
+}
+
+/*-- SLIDER --*/
+
+.instructions-title-paragraph {
+  text-align: center;
+  padding-bottom: 30px;
+  width: 52%;
+  margin: auto;
+}
+
+.instruction-title {
+  text-transform: uppercase;
+  font-size: 3.5vh;
+  color: #2D3E4E;
+  line-height: 5vh;
+  font-weight: 800;
+}
+
+.instruction-paragraph {
+  font-size: 3vh;
+  color: #9E9E9E;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.instructions h3 {
+  cursor: default;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.bloc-image-figcaption {
+  display: flex;
+  justify-content: center;
+}
+
+.figcaption {
+  text-align: center;
+  background-color: #eef1f3;
+  width: 35%;
+  padding-top: 90px;
+}
+
+.slider-img { 
+  width: 35%;
+  height: 300px;
+  border: 1px solid #efeaea;
+}
+
+.color-button {
+  color: #2D3E4E;
+}
+
+.main-instruction {
+  font-size: 32px;
+  font-family: revert;
+  font-weight: 100;
+  color: #0096e3;
+  padding: 0
+   
+}
+
+.additional-instructions {
+  font-family: sans-serif;
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+  color: #373a40;
+  font-weight: 100;
+  padding: 10px;
+}
+
+.slider-direction {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -170px;
+}
+
+.left-arrow {
+  font-size: 35px;
+  color: #2D3E4E;
+  cursor: pointer;
+  margin-left: min(110px, 11%);
+}
+
+.right-arrow {
+  font-size: 35px;
+  color: #2D3E4E;
+  cursor: pointer;
+  margin-right: min(110px, 11%);
+}
+
+.slider-player-controls {
+  position: relative;
+  top: -207px;
+  display: inline-block;
+  margin-left: min(135px, 12%);
+}
+
+.play-button {
+  font-size: 30px;
+  color: #2D3E4E;
+  cursor: pointer;
+  margin-left: min(140px, 13%);
+}
+
+.pause-button {
+  font-size: 30px;
+  color: #b8bdc2;
+  cursor: pointer;
+  margin-left: min(140px, 13%);
+}
+
+#map { 
+  height: 600px;
+  border: 1px solid #dad4d4;
+}
+
+.leaflet-bar a:first-child {
+  color: black;
+}
+
+.leaflet-bar a:last-child {
+  color: black;
+}
+
+/*-- INFORMATIONS STATIONS PANEL --*/
+
+.station-informations-panel {
+  background-color: white;
+  text-align: center;
+  font-size: 18px; 
+  width: 20%;
+  z-index: 2000;
+  position: absolute;
+  display: none;
+  height: 100%;
+  border-right: 1px solid #e0e0e0;
+}
+
+.name-station {
+  padding: 20px;
+  color: #2D3E4E;
+}
+
+.bikes-and-places-available {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2D3E4E;
+}
+
+.available-bikes{
+  margin: 10px;
+  color: #2D3E4E;
+}
+
+.icone-information-panel{
+  margin: 10px;
+  color: #2D3E4E;
+}
+
+.stations-informations{
+  margin-top: 200px;
+  font-weight: 200;
+  color: #2D3E4E;
+}
+
+.close-panel {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 20px;
+  color: #2D3E4E;
+  cursor: pointer;
+}
+
+.close-panel:hover {
+  color: #80808099;
+}
+
+/*-- RESERVATION PANEL --*/
+
+.bike-reservation-panel {
+  background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  text-align: center;
+  font-size: 14px; 
+  width: 20%;
+  z-index: 2000;
+  position: absolute;
+  display: none;
+  height: 100%;
+  padding-top: 90px;
+  font-weight: 200;
+}
+
+.canvas {
+  border: 1px solid #2D3E4E;
+  background-color : white;
+}
+
+.bt-clear {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  color: #2D3E4E;
+  padding: .5em;
+  text-decoration: none;
+  border: #2D3E4E;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.leaflet-container a {
+  color: white;
+}
+
+.first-name {
+  color: #2D3E4E;
+  font-weight: 400;
+}
+
+.last-name {
+  padding-right: 18px;
+  color: #2D3E4E;
+  font-weight: 400;
+}
+
+input {
+  margin: 10px;
+  color: #2D3E4E;
+}
+
+.close-form {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 20px;
+  color: #2D3E4E;
+  cursor: pointer;
+}
+
+.close-form:hover {
+  color: #80808099;
+}
+
+/*-- CONFIRMATION RESERVATION PANEL --*/
+
+.reservation-confirmation-panel {
+  width: 100%;
+  height: 260px;
+  padding-top: 50px;
+  text-align: center;
+  color: #2D3E4E;
+  font-weight: 200;
+}
+
+.reservation-confirmation-panel h2 {
+  margin: 0;
+}
+
+.reservation-information p {
+  padding: 5px;
+}
+
+.hide{
+  display: none;
+}
+
+.display {
+  display: none;
+}
+
+.submitForm {
+  color: #2D3E4E;
+}
+
+.button {
+  background-color: #0096e3;
+  border-radius: 5px;
+  color: white;
+  padding: .5em;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: small;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #2d3e418c; 
+}
+
+footer {
+  color: #2D3E4E;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+  font-weight: 300;
+  border-top: 1px solid #2d3e4e70;
+}
+
+@media all and (max-width: 1024px)
+{
+  .block-title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+  }
+
+  .first-underline {
+    display: none;
+  }
+
+  .second-underline {
+    display: none;
+  }
+
+  .banner h1 {
+    font-size: 9vh;
+    width: 500px;
+  }
+
+  .slider-player-controls {
+    margin-left: min(125px, 9%);
+  }
+
+  .figcation {
+    padding-top: 20px;
+  }
+
+  .main-instruction {
+    font-size: 23px;
+  }
+
+  .additional-instructions {
+    font-size: 16px;
+  }
+
+  .left-arrow {
+    margin-left: min(40px, 4%);
+  }
+}
+
+@media all and (max-device-width: 480px)
+{
+  .block-title {
+    position: absolute;
+    left: 50%;
+    top: 17%;
+  }
+
+  .first-underline {
+    display: none;
+  }
+
+  .second-underline {
+    display: none;
+  }
+
+  .introduction-concept {
+    display: block; 
+    justify-content: center;
+    margin: 40px 0px 40px 0px;
+    text-align: center;
+  }
+
+  .main-concept {
+    width: 100%;
+  }
+
+  .concept {
+    font-size: 3vh;
+  }
+
+  .offer {
+    font-size: 2.5vh;
+  }
+
+  .objectives {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .block-img-text-technology {
+    display: block;
+  }
+
+  .img-text {
+    margin: auto;
+    width: auto;
+    padding: 50px;
+  }
+
+  .img-text img {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 91px;
+    width: 43.9vw;
+    height: 42.6vw;
+  }
+
+  .instruction-title {
+    font-size: 3vh;
+  }
+
+  .instruction-paragraph {
+    font-size: 2vh;
+  }
+
+  .technology {
+    margin: 40px 0px 30px 0px;
+  }
+
+  .banner h1 {
+    color: white;
+    transform: translate(-50%, -50%);
+    font-size: 5vh;
+    padding: 20px;
+    font-family: system-ui;
+    cursor: default;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    width: 300px;
+  }
+
+  .banner img {
+    height: auto;
+  }
+
+  .instructions {
+    padding: 0; 
+  }
+
+  .main-slider {
+    position: relative;
+    height: 300px;
+    margin-bottom: 70px;
+    text-align: center;
+    margin: 0;
+    height: 100%;
+  }
+
+  .bloc-image-figcaption {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding-bottom: 10%;
+    background-color: #eef1f3;
+  }
+
+  .slider-img {
+    width: 100px;
+    margin: auto;
+    width: 90%;
+    height: 30vh;
+  }
+
+  .figcaption {
+    min-height: 20vh;
+    width: 100%;
+    padding: 0;
+  }
+
+  .main-instruction {
+    font-size: 18px;
+    color: #0096e3;
+    width: 40vh;
+    margin: auto!important;
+    padding-top: 18%;
+  }
+
+  .additional-instructions {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #373a40;
+    width: 100%;
+    padding: 0;
+  }
+
+  .slider-direction {
+    justify-content: space-between;
+    display: flex;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 10%;
+  }
+
+  .left-arrow {
+    font-size: 18px;
+    color: #2D3E4E;
+    cursor: pointer;
+    margin-right: 25px;
+  }
+
+  .right-arrow {
+    font-size: 18px;
+    margin-left: 25px;
+    color: #2D3E4E;
+    cursor: pointer;
+  }
+
+  .play-button {
+    font-size: 18px;
+    position: initial;
+    color: #2D3E4E;
+    cursor: pointer;
+    padding-left: 5px;
+  }
+
+  .pause-button {
+    font-size: 18px;
+    position: initial;
+    color: #b3b3b3;
+    cursor: pointer;
+  }
+
+  .slider-player-controls {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 10%;
+    position: absolute;
+    margin-left: 0;
+  }
+
+  .station-informations-panel {
+    width: 90%;
+  }
+
+  .bike-reservation-panel {
+    width: 90%;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
